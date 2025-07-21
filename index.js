@@ -2,7 +2,7 @@ const http = require('node:http');
 const path = require('node:path');
 const fs = require('node:fs');
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 const server = http.createServer((req, res) => {
     let filePath = '';
@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
             res.end('Server Error');
         } else {
             res.writeHead(200, { 'Content-Type': 'text/html' });
-            res.end(content);
+            res.end(content, 'utf-8');
         }
     })
 })
