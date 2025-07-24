@@ -7,10 +7,18 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["node", "server", "static", "render"],
+  "keywords": [
+    "node",
+    "server",
+    "static",
+    "render"
+  ],
   "author": "Oluwatobi",
   "license": "ISC",
   "engines": {
     "node": ">=16"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }
