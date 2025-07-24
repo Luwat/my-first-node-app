@@ -1,12 +1,24 @@
 {
   "name": "my-first-node-app",
   "version": "1.0.0",
+  "description": "A simple Node.js server serving static pages",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "node",
+    "server",
+    "static",
+    "render"
+  ],
+  "author": "Oluwatobi",
   "license": "ISC",
-  "description": ""
+  "engines": {
+    "node": ">=16"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }
